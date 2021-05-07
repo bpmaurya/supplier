@@ -1,0 +1,39 @@
+{% extends 'base.html' %} 
+ {% block title %} homepage {% endblock title %}
+ {% block body %}
+<div class='container' >
+  <div class="row-md-6 blog-main my-4" >
+    <button class="btn btn-primary"> Add-Supplier-details</button>
+  </div>
+</div>
+
+<div class="container">
+  <form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputSupplier" class="form-label">Supplier</label>
+      <select id="inputSupplier" class="form-select">
+        <option selected>Choose supplier...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label for="inputInvoice" class="form-label">Invoice Number</label>
+      <input type="text" class="form-control" id="inputInvoice" />
+    </div>
+
+    <div class="col-12">
+      <label for="inputAmount" class="form-label">Amount</label>
+      <input
+        type="number"
+        class="form-control"
+        id="inputAmount"
+        placeholder="Enter Amount"
+      />
+    </div>
+   
+    <div class="col-12 my-3">
+      <button type="submit" class="btn btn-primary">Sign in</button>
+    </div>
+  </form>
+</div>
+{% endblock body %}
